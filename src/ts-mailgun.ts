@@ -199,7 +199,7 @@ export class NodeMailgun {
 				to: to,
 				subject: subject,
 				html: body,
-				'X-Mailgun-Variables': templateVars
+				'h:X-Mailgun-Variables': templateVars
 			};
 
 			message = Object.assign(message, sendOptions);
